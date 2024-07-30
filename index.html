@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Jasmitha!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Stalemate&display=swap');
+
+        body {
+            font-family: "Courgette", cursive;
+            font-weight: 400;
+            font-style: normal;
+            background-color: #ffe6e6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #8b0000;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            padding: 2em;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 1em;
+        }
+
+        .signature {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 2em;
+        }
+
+        .heart {
+            color: #ff1493;
+            font-size: 1.2em;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .floating {
+            font-family: 'Brush Script MT', cursive;
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="floating">Happy Birthday, Jasmitha! 🎉</h1>
+        <div>
+            <span class="heart">❤️</span>
+            <span class="heart">💖</span>
+            <span class="heart">💗</span>
+        </div>
+        <p>Dear Jasmitha,</p>
+        <p>On this special day, I want to wish you the happiest of birthdays! Your presence in my life brings so much
+            joy and light.</p>
+        <p>Your kindness, your laughter, and your beautiful spirit make the world a better place. I feel incredibly
+            lucky to know you and to be a part of your life.</p>
+        <p>May this 23rd year of your life be filled with amazing adventures, accomplishments, and all the happiness you
+            deserve.</p>
+        <p>Here's to you, to your dreams, and to another wonderful year ahead!</p>
+        <div class="signature">Shankar<span class="heart">❤</span></div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hearts = document.querySelectorAll('.heart');
+            hearts.forEach((heart, index) => {
+                heart.style.animationDelay = `${index * 0.2}s`;
+            });
+        });
+    </script>
+</body>
+
+</html>
